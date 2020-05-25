@@ -1,38 +1,146 @@
+body {
+    background-color: #f1efea;
+    margin: 0;
+    padding: 50px;
+}
+
 .App {
-  text-align: center;
+    display: block;
+    background-color: white;
+    max-width: 720px;
+    margin: auto;
+    padding: 50px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(209, 209, 209, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(209, 209, 209, 1);
+    box-shadow: 0 0 5px 0 rgba(209, 209, 209, 1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .date-wrapper {
+    margin: auto 0;
+    font-size: 58px;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header .date-wrapper2 {
+    margin: auto 0;
 }
 
-.App-link {
-  color: #61dafb;
+.date {
+    text-align: center;
+    margin: auto 0;
+    padding: 3px 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .date-wrapper3 {
+    display: block;
+    width: 100%;
+    margin: auto 0;
 }
+
+.day {
+    text-align: right;
+    font-size: 28px;
+    padding: 0 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #aaccef;
+}
+
+.todo-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.todo-wrapper p {
+    width: 80%;
+    font-size: 22px;
+    font-family: fantasy;
+    font-weight: bold;
+    color: #474747;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+    color: #747474 !important;
+}
+
+.checkbox-wrapper {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.trash-wrapper {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.trash-wrapper img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    text-align: center;
+}
+
+.trash-wrapper img:hover {
+    padding: 5px;
+    background: #dcedff;
+}
+
+.checkbox-done {
+    -ms-transform: scale(1.6); /* IE */
+    -moz-transform: scale(1.6); /* FF */
+    -webkit-transform: scale(1.6); /* Safari and Chrome */
+    -o-transform: scale(1.6); /* Opera */
+    transform: scale(1.6);
+    margin: auto 10px;
+    float: right;
+    text-align: right;
+}
+
+.add-todo {
+    display: flex;
+    width: 100%;
+}
+
+.add-todo input {
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.add-todo button {
+    width: 20%;
+    background: #79bbff linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0 0 0 #528ecc;
+}
+
+.add-todo button:hover {
+    background: #378de5 linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+}
+
+.add-todo button:active {
+    position: relative;
+    top: 1px;
+}
+
